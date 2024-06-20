@@ -11,6 +11,14 @@
 		992370A82C23F35D00EC0053 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370A72C23F35D00EC0053 /* ContentView.swift */; };
 		992370AA2C23F35E00EC0053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992370A92C23F35E00EC0053 /* Assets.xcassets */; };
 		992370AD2C23F35E00EC0053 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992370AC2C23F35E00EC0053 /* Preview Assets.xcassets */; };
+		992370B52C24387D00EC0053 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370B42C24387D00EC0053 /* Review.swift */; };
+		992370B82C2438D100EC0053 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370B72C2438D100EC0053 /* ApiService.swift */; };
+		992370BC2C243A2B00EC0053 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370BB2C243A2B00EC0053 /* HeaderView.swift */; };
+		992370BE2C243A5E00EC0053 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370BD2C243A5E00EC0053 /* ReviewView.swift */; };
+		992370C02C243B3300EC0053 /* StarsIndicatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370BF2C243B3300EC0053 /* StarsIndicatorsView.swift */; };
+		992370C32C243D3900EC0053 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370C22C243D3900EC0053 /* ReviewsViewModel.swift */; };
+		992370C72C24556100EC0053 /* AddReviewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370C62C24556100EC0053 /* AddReviewForm.swift */; };
+		992370CB2C24727500EC0053 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992370CA2C24727500EC0053 /* StarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		992370A72C23F35D00EC0053 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		992370A92C23F35E00EC0053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992370AC2C23F35E00EC0053 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		992370B42C24387D00EC0053 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		992370B72C2438D100EC0053 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		992370BB2C243A2B00EC0053 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		992370BD2C243A5E00EC0053 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		992370BF2C243B3300EC0053 /* StarsIndicatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsIndicatorsView.swift; sourceTree = "<group>"; };
+		992370C22C243D3900EC0053 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
+		992370C62C24556100EC0053 /* AddReviewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewForm.swift; sourceTree = "<group>"; };
+		992370CA2C24727500EC0053 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,11 @@
 		992370A42C23F35D00EC0053 /* test-app */ = {
 			isa = PBXGroup;
 			children = (
+				992370C12C243D2100EC0053 /* ViewModels */,
+				992370B92C24398600EC0053 /* Views */,
+				992370B62C2438BF00EC0053 /* Services */,
+				992370B32C24386A00EC0053 /* Models */,
 				992370A52C23F35D00EC0053 /* test_appApp.swift */,
-				992370A72C23F35D00EC0053 /* ContentView.swift */,
 				992370A92C23F35E00EC0053 /* Assets.xcassets */,
 				992370AB2C23F35E00EC0053 /* Preview Content */,
 			);
@@ -65,6 +84,51 @@
 				992370AC2C23F35E00EC0053 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		992370B32C24386A00EC0053 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				992370B42C24387D00EC0053 /* Review.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		992370B62C2438BF00EC0053 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				992370B72C2438D100EC0053 /* ApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		992370B92C24398600EC0053 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				992370BA2C243A1C00EC0053 /* Compenents */,
+				992370A72C23F35D00EC0053 /* ContentView.swift */,
+				992370C62C24556100EC0053 /* AddReviewForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		992370BA2C243A1C00EC0053 /* Compenents */ = {
+			isa = PBXGroup;
+			children = (
+				992370BB2C243A2B00EC0053 /* HeaderView.swift */,
+				992370BD2C243A5E00EC0053 /* ReviewView.swift */,
+				992370BF2C243B3300EC0053 /* StarsIndicatorsView.swift */,
+				992370CA2C24727500EC0053 /* StarView.swift */,
+			);
+			path = Compenents;
+			sourceTree = "<group>";
+		};
+		992370C12C243D2100EC0053 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				992370C22C243D3900EC0053 /* ReviewsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992370BC2C243A2B00EC0053 /* HeaderView.swift in Sources */,
 				992370A82C23F35D00EC0053 /* ContentView.swift in Sources */,
+				992370C32C243D3900EC0053 /* ReviewsViewModel.swift in Sources */,
 				992370A62C23F35D00EC0053 /* test_appApp.swift in Sources */,
+				992370CB2C24727500EC0053 /* StarView.swift in Sources */,
+				992370C72C24556100EC0053 /* AddReviewForm.swift in Sources */,
+				992370B82C2438D100EC0053 /* ApiService.swift in Sources */,
+				992370C02C243B3300EC0053 /* StarsIndicatorsView.swift in Sources */,
+				992370BE2C243A5E00EC0053 /* ReviewView.swift in Sources */,
+				992370B52C24387D00EC0053 /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
